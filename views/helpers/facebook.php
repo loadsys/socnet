@@ -18,7 +18,7 @@ class FacebookHelper extends AppHelper {
 
 	function jsInit() {
 		if ( FacebookAuth::isEnabled() ) {
-			return 'FB.init("'.Configure::read('Facebook.api_key').'", "'.Router::url('/socnet/facebook/xd_receiver.html').'");';
+			return 'FB.init("'.Configure::read('Socnet.Facebook.api_key').'", "'.Router::url('/socnet/facebook/xd_receiver.html').'");';
 		}
 		else {
 			return '';
